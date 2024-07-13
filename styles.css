@@ -5,7 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0
+    margin: 0;
+    padding: 0 20px;
 }
 
 .container {
@@ -14,33 +15,75 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 h1 {
     color: #3498db; /* Blue color */
     margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
 p {
     color: #333333; /* Dark grey */
     line-height: 1.6;
     margin: 10px 0;
+    font-size: 1em;
 }
 
 h2 {
     color: #3498db; /* Blue color */
     margin: 20px 0;
     font-style: italic;
+    font-size: 1.5em;
 }
-
-
 
 button:hover {
     background-color: #2980b9; /* Darker blue */
 }
+
 header {
     text-align: left;
     position: relative;
     background-color: whitesmoke; /* Teal */
     color: #FFFFFF;
-  }
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .container {
+        max-width: 100%;
+        box-shadow: none;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin: 15px 0;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1em;
+    }
+}
