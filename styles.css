@@ -5,14 +5,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 0
 }
 
 .container {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 40px;
     text-align: center;
     max-width: 600px;
 }
@@ -34,25 +33,12 @@ h2 {
     font-style: italic;
 }
 
-button {
-    background-color: #3498db; /* Blue color */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 
 button:hover {
     background-color: #2980b9; /* Darker blue */
 }
 header {
-    padding: 20px;
     text-align: left;
     position: relative;
     background-color: whitesmoke; /* Teal */
